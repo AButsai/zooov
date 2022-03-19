@@ -4,3 +4,7 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
+@import './variables/variables';
+@import './base/reset';
+@import './base/base';
+@import './components/hero';
