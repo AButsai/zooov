@@ -1,12 +1,18 @@
 <section class="hero-header">
   <div class="container">
     <header class="header">
-      <div class="header__logo">
-        <img class="header__logo-img" src="./images/logo.jpg" alt="logo" />
+      <div class="header__wrapper">
+        <div class="header__logo">
+          <picture class="mobile__logo-img">
+            <source srcset="./images/logo@2x.webp 1x, ./images/logo@2x.webp 2x" type="image/webp" />
+            <source srcset="./images/logo@2x.jpg 1x, ./images/logo@2x.jpg 2x" type="image/jpeg" />
+            <img src="./images/logo.jpg" alt="Кот" />
+          </picture>
+        </div>
+        <svg class="header__burger" data-open>
+          <use href="./images/svg/icons.svg#burger-menu"></use>
+        </svg>
       </div>
-      <svg class="header__burger" data-open>
-        <use href="./images/svg/icons.svg#burger-menu"></use>
-      </svg>
 
       <nav class="menu">
         <ul class="menu__list">
@@ -23,7 +29,14 @@
       <div class="mobile">
         <div class="mobile-menu__wrapper">
           <div class="mobile__logo">
-            <img class="mobile__logo-img" src="./images/logo.jpg" alt="logo" />
+            <picture class="mobile__logo-img">
+              <source
+                srcset="./images/logo@2x.webp 1x, ./images/logo@2x.webp 2x"
+                type="image/webp"
+              />
+              <source srcset="./images/logo@2x.jpg 1x, ./images/logo@2x.jpg 2x" type="image/jpeg" />
+              <img src="./images/logo.jpg" alt="Кот" />
+            </picture>
           </div>
           <svg class="mobile__menu-close hidden-btn" data-close>
             <use href="./images/svg/icons.svg#close" data-close></use>
@@ -40,7 +53,7 @@
             <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">FAQ</a></li>
             <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">Контакты</a></li>
           </ul>
-          <a class="hero__link-btn" href="#">Выбрать рацион</a>
+          <a class="hero__link-btn hero__link-btn--mobile-menu" href="#">Выбрать рацион</a>
         </nav>
       </div>
     </header>

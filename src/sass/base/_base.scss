@@ -9,18 +9,30 @@ section {
 }
 
 .container {
-  min-width: 375px;
+  max-width: 375px;
+  width: 100%;
   margin: 0 auto;
   padding-left: 24px;
   padding-right: 24px;
 
+  @media (min-width: 376px) and (max-width: 575px) {
+    max-width: 576px;
+  }
+
+  @media (min-width: $small-sm) {
+    max-width: 576px;
+  }
+
+  @media (min-width: $medium-md) {
+    max-width: 768px;
+  }
+
   @media (min-width: $large-lg) {
-    width: 992px;
+    max-width: 992px;
   }
 
   @media (min-width: $extra-large-xl) {
-    padding-left: 0;
-    padding-right: 0;
+    max-width: 1248px;
   }
 }
 
@@ -43,3 +55,4 @@ section {
 // $large-lg 992px
 // $extra-large-xl 1200px
 // $extra-extra-large-xxl 1400px
+// max-width-display: 1440px
