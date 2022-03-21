@@ -1,0 +1,21 @@
+.hero__link-btn {
+  font-family: $second-font;
+  font-weight: 600;
+  line-height: 1.4;
+
+  display: block;
+  width: 226px;
+  font-size: 16px;
+  padding: 13px 40px;
+  margin: 0 auto;
+  border: none;
+  border-radius: 8px;
+
+  color: $white;
+  background-color: $bg;
+}
+
+.hero__link-btn--hero {
+  margin: 0;
+  margin-top: 48px;
+}
