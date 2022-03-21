@@ -1,28 +1,84 @@
+.hero-header {
+  position: relative;
+  max-width: 100%;
+  padding-bottom: 173px;
+  background-image: url('../images/bg-hero-mobile.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url('../images/bg-hero-mobile@2x.jpg');
+  }
+
+  @media (min-width: $small-sm) {
+    background-image: url('../images/hero-bg.jpg');
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/hero-bg@2x.jpg');
+    }
+  }
+
+  @media (min-width: $medium-md) {
+    max-width: 1440px;
+    padding-bottom: 225px;
+  }
+
+  @media (min-width: $large-lg) {
+  }
+
+  @media (min-width: $extra-large-xl) {
+  }
+}
+
 .hero__wrap {
   position: relative;
+  text-align: left;
+  margin-top: 137px;
+  width: 338px;
 
   &::after {
     position: absolute;
     content: '';
-    top: 55px;
+    top: 54px;
     left: -5px;
     width: 182px;
-    height: 70px;
-    background-image: url(../images/svg/icons.svg#ellipse-hero);
+    height: 68px;
+    background-image: url('../images/svg/icons.svg#ellipse-hero');
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
-
-    @media (min-width: $medium-md) {
-      top: 60px;
-      left: 176px;
-      width: 262px;
-      height: 100px;
-    }
+    background-size: cover;
   }
 
-  @media (min-width: $small-sm) {
-    width: 490px;
+  @media (min-width: $medium-md) {
+    width: 491px;
+
+    &::after {
+      top: 65px;
+      left: 180px;
+      width: 260px;
+      height: 94px;
+    }
+  }
+}
+
+.hero__title {
+  position: relative;
+  font-family: $main-font;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 1.3;
+  letter-spacing: 0.02em;
+
+  color: $white;
+
+  margin-bottom: 24px;
+
+  z-index: 1;
+
+  @media (min-width: $medium-md) {
+    font-size: 54px;
+    margin-bottom: 10px;
   }
 }
 
@@ -32,41 +88,19 @@
   }
 }
 
-.hero__title {
-  font-family: $main-font;
-  font-weight: 700;
-  font-size: 44px;
-  line-height: 1.3;
-  letter-spacing: 0.02em;
-
-  position: relative;
-  z-index: 1;
-
-  margin-top: 137px;
-
-  color: $white;
-
-  @media (min-width: $medium-md) {
-    font-size: 54px;
-  }
-}
-
 .hero__text {
+  width: 227px;
   font-family: $second-font;
-  font-weight: 400;
   font-size: 18px;
   line-height: 1.4;
 
-  margin-top: 24px;
-
   color: $white;
 
-  @media (min-width: $small-sm) {
-    font-size: 20px;
-    width: 338px;
-  }
+  margin-bottom: 48px;
 
   @media (min-width: $medium-md) {
-    width: 368px;
+    width: 340px;
+    font-size: 20px;
+    margin-bottom: 25px;
   }
 }
