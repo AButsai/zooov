@@ -15,7 +15,7 @@ function mobileSwiper() {
       spaceBetween: 72,
       slideClass: 'barf-card',
       pagination: {
-        el: '.swiper-pagination',
+        el: '.swiper-pagination.barf-pagination',
         // type: 'bullets',
       },
     });

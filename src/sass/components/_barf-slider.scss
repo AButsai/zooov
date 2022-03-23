@@ -1,4 +1,4 @@
-.slider-container {
+.barf-slider-container {
   position: relative;
   width: 100%;
   padding: 56px 49px 72px;
@@ -102,17 +102,17 @@
   margin-right: 17px;
 }
 
-.swiper-pagination {
+.barf-pagination {
   @media (min-width: $medium-md) {
     display: none;
   }
 }
 
-.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+.swiper-pagination.barf-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
   bottom: 24px;
 }
 
-.swiper-pagination .swiper-pagination-bullet {
+.swiper-pagination.barf-pagination .swiper-pagination-bullet {
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -121,6 +121,6 @@
   margin-right: 8px;
 }
 
-.swiper-pagination-bullet.swiper-pagination-bullet-active {
+.swiper-pagination.barf-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color: $bg;
 }
