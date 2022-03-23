@@ -4,6 +4,7 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
+// @import '../../node_modules/swiper/swiper-bundle.min.css';
 @import './variables/variables';
 @import './base/reset';
 @import './base/base';
@@ -11,3 +12,5 @@
 @import './components/header';
 @import './components/mobile-menu';
 @import './components/hero';
+@import './components/barf';
+@import './components/barf-slider';
