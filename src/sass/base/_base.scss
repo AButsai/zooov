@@ -16,7 +16,7 @@ section {
   padding-right: 24px;
 
   @media (min-width: 376px) and (max-width: 575px) {
-    max-width: 576px;
+    width: 576px;
   }
 
   @media (min-width: $small-sm) {
