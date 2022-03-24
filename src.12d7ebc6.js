@@ -215,4 +215,4 @@ const e={burger:document.querySelector("[data-open]"),menuClose:document.querySe
 },{"swiper":"Riml"}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/mobile-menu.js"),require("./js/barf-slider.js"),require("./js/diet-slider.js");
 },{"./sass/main.scss":"clu1","./js/mobile-menu.js":"sByI","./js/barf-slider.js":"zRdr","./js/diet-slider.js":"Ap6T"}]},{},["Focm"], null)
-//# sourceMappingURL=/zooov/src.bde0d482.js.map
+//# sourceMappingURL=/zooov/src.12d7ebc6.js.map
