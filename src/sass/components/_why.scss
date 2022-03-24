@@ -1,0 +1,200 @@
+.why {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  overflow: hidden;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: '';
+    width: 1440px;
+    height: 245px;
+    background-image: url('../images/svg/icons.svg#why');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &::before {
+    top: 106px;
+    left: 0;
+  }
+
+  &::after {
+    bottom: 170px;
+    left: -445px;
+  }
+
+  @media (min-width: $small-sm) {
+    // max-width: 576px;
+  }
+
+  @media (min-width: $medium-md) {
+    // max-width: 768px;
+
+    &::before {
+      top: 120px;
+      left: -32px;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  @media (min-width: $extra-large-xl) {
+    // max-width: 1248px;
+  }
+}
+
+.why__wrap {
+  @media (min-width: $small-sm) {
+    width: 375px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $medium-md) {
+    // max-width: 768px;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.why__title {
+  position: relative;
+  font-family: $main-font;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.3;
+  letter-spacing: 0.02em;
+
+  margin-bottom: 40px;
+
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    position: absolute;
+    content: '';
+    bottom: -14px;
+    left: 242px;
+    width: 26px;
+    height: 32px;
+    background-image: url('../images/svg/icons.svg#why-title');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+.why__list {
+  position: relative;
+  z-index: 1;
+
+  @media (min-width: $small-sm) {
+    // max-width: 576px;
+  }
+  @media (min-width: $medium-md) {
+    // max-width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $extra-large-xl) {
+    // max-width: 1248px;
+    flex-wrap: nowrap;
+  }
+}
+
+.why__item {
+  margin-bottom: 40px;
+
+  @media (min-width: $small-sm) {
+    // max-width: 576px;
+  }
+
+  @media (min-width: $large-lg) {
+    // max-width: 992px;
+    margin-right: 8px;
+  }
+
+  @media (min-width: $extra-large-xl) {
+    // max-width: 1248px;
+    margin-right: 0;
+  }
+}
+
+.why__item:last-child {
+  margin-bottom: 0;
+
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    top: -11px;
+    left: 28px;
+    width: 28px;
+    height: 32px;
+    background-image: url('../images/svg/icons.svg#why-smile');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media (min-width: $medium-md) {
+    // max-width: 768px;
+    &::after {
+      top: -19px;
+      left: -15px;
+      transform: rotate(-90deg);
+    }
+  }
+}
+
+.why__svg {
+  width: 40px;
+  height: 40px;
+
+  margin-bottom: 16px;
+}
+
+.why__subtitle {
+  font-family: $second-font;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 130%;
+
+  margin-bottom: 8px;
+}
+
+.why__description {
+  font-family: $second-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+
+  width: 307px;
+
+  @media (min-width: $extra-large-xl) {
+    // max-width: 1248px;
+    width: 220px;
+  }
+}
+
+@media (min-width: $small-sm) {
+  // max-width: 576px;
+}
+
+@media (min-width: $medium-md) {
+  // max-width: 768px;
+}
+
+@media (min-width: $large-lg) {
+  // max-width: 992px;
+}
+
+@media (min-width: $extra-large-xl) {
+  // max-width: 1248px;
+}
