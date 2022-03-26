@@ -40,3 +40,16 @@
 
   z-index: 1;
 }
+
+.hero__link-btn--footer {
+  width: 100%;
+  color: $color-text-btn;
+  border-radius: 2px;
+  background-color: $bg-btn-send;
+
+  @media (min-width: $extra-large-xl) {
+    width: 214px;
+    border-radius: 8px;
+    margin: 0;
+  }
+}
