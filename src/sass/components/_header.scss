@@ -20,9 +20,6 @@
   overflow: hidden;
 }
 
-.header__logo-img {
-}
-
 .header__burger {
   color: $white;
   width: 32px;
@@ -62,4 +59,36 @@
   font-size: 16px;
   line-height: 1.4;
   color: $white;
+}
+
+.header.header__fixed {
+  background-color: $white;
+}
+
+.header__fixed {
+  width: 332px;
+  position: fixed;
+  top: 0;
+
+  z-index: 20;
+
+  @media (min-width: $small-sm) {
+    width: 527px;
+  }
+
+  @media (min-width: $medium-md) {
+    width: 719px;
+  }
+
+  @media (min-width: $large-lg) {
+    width: 942px;
+  }
+
+  @media (min-width: $extra-large-xl) {
+    width: 1200px;
+  }
+}
+
+.header.header__fixed .header__burger {
+  color: $black;
 }
