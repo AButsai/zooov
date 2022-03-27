@@ -235,7 +235,9 @@
 
   position: relative;
   z-index: 1;
+}
 
+.footer-copy__container {
   @media (min-width: $extra-large-xl) {
     display: flex;
   }

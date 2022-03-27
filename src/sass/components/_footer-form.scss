@@ -137,6 +137,7 @@
 }
 
 .footer-form__textarea {
+  resize: none;
   @media (min-width: $extra-large-xl) {
     margin-bottom: 22px;
   }
