@@ -211,6 +211,11 @@
   background-image: url('../images/svg/icons.svg#telegram');
 }
 
+.contacts__link-whatsapp:hover,
+.contacts__link-telegram:hover {
+  background-color: $color-text-copy;
+}
+
 .contacts__subtext {
   font-family: $second-font;
   font-weight: 400;
