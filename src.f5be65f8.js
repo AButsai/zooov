@@ -231,4 +231,4 @@ const e=document.querySelectorAll(".js-menu__link"),t=e=>{e.preventDefault();con
 },{"./refs.js":"VyiV"}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/mobile-menu.js"),require("./js/barf-slider.js"),require("./js/diet-slider.js"),require("./js/accardion.js"),require("./js/scroll.js"),require("./js/diet-backdrop.js"),require("./js/counter.js"),require("./js/send-form.js"),require("./js/calculate-form.js"),require("./js/card-order-btn.js");
 },{"./sass/main.scss":"clu1","./js/mobile-menu.js":"sByI","./js/barf-slider.js":"zRdr","./js/diet-slider.js":"Ap6T","./js/accardion.js":"HyPg","./js/scroll.js":"N8YO","./js/diet-backdrop.js":"maKg","./js/counter.js":"NAX0","./js/send-form.js":"DAe7","./js/calculate-form.js":"CXB9","./js/card-order-btn.js":"jfB2"}]},{},["Focm"], null)
-//# sourceMappingURL=/zooov/src.8102b1c4.js.map
+//# sourceMappingURL=/zooov/src.f5be65f8.js.map
