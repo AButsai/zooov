@@ -65,7 +65,9 @@
 }
 
 .mobile-menu__list {
+  position: relative;
   margin-top: 52px;
+  z-index: 5;
 }
 
 .mobile-menu__item {
