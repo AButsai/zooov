@@ -5,19 +5,19 @@ const refs = {
   links: document.querySelectorAll('.js-menu__link'),
 };
 
-const handleToggleClass = () => {
-  refs.burger.classList.toggle('hidden-btn');
-  refs.menuClose.classList.toggle('hidden-btn');
-  refs.mobileMenu.classList.toggle('mobile-open');
-};
+refs.burger.addEventListener('click', () => {
+  refs.menuClose.classList.remove('hidden-btn');
+  refs.mobileMenu.classList.add('mobile-open');
+});
 
-refs.burger.addEventListener('click', handleToggleClass);
-refs.menuClose.addEventListener('click', handleToggleClass);
+refs.menuClose.addEventListener('click', () => {
+  refs.mobileMenu.classList.remove('mobile-open');
+  refs.burger.classList.remove('hidden-btn');
+});
 
 refs.links.forEach(link => {
   link.addEventListener('click', () => {
     refs.mobileMenu.classList.remove('mobile-open');
-    refs.burger.classList.toggle('hidden-btn');
-    refs.menuClose.classList.toggle('hidden-btn');
+    refs.burger.classList.remove('hidden-btn');
   });
 });
