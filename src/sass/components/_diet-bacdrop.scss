@@ -1,0 +1,204 @@
+.diet-backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.diet-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 24px 15px;
+  background: #00000080;
+
+  visibility: visible;
+  opacity: 1;
+  z-index: 30;
+
+  transition: opacity 250ms ease-in-out, visibility 250ms ease-in-out;
+
+  overflow-y: auto;
+}
+
+.diet-backdrop__wrapper {
+  position: relative;
+  width: 327px;
+  padding: 48px 24px 24px;
+  background-color: $white;
+  margin: 0 auto;
+
+  @media (min-width: $extra-large-xl) {
+    display: flex;
+    width: 872px;
+    padding: 56px;
+  }
+}
+
+.diet-backdrop__btn-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background-color: transparent;
+}
+
+.diet-backdrop__svg {
+  width: 18px;
+  height: 18px;
+}
+
+.diet-backdrop__image-wrap {
+}
+
+.diet-backdrop__title {
+  font-family: $second-font;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.3;
+
+  margin-bottom: 4px;
+}
+
+.diet-backdrop__title-mobile {
+  @media (min-width: $extra-large-xl) {
+    display: none;
+  }
+}
+
+.diet-backdrop__title-form,
+.diet-backdrop__title-desctop {
+  display: none;
+  @media (min-width: $extra-large-xl) {
+    display: block;
+  }
+}
+
+.diet-backdrop__text {
+  font-family: $second-font;
+  font-size: 15px;
+  line-height: 1.3;
+
+  margin-bottom: 31px;
+}
+
+.diet-backdrop__text-mobile {
+  @media (min-width: $extra-large-xl) {
+    display: none;
+  }
+}
+
+.diet-backdrop__text-form,
+.diet-backdrop__text-desctop {
+  display: none;
+  @media (min-width: $extra-large-xl) {
+    display: block;
+    margin-bottom: 16px;
+  }
+}
+
+.diet-backdrop__img {
+  width: 100%;
+  height: 335px;
+  margin-bottom: 19px;
+
+  @media (min-width: $extra-large-xl) {
+    width: 351px;
+    margin-right: 43px;
+  }
+}
+
+.diet-backdrop__img-form {
+  @media (min-width: $extra-large-xl) {
+    width: 351px;
+    height: 500px;
+    object-fit: cover;
+    margin-bottom: 0;
+  }
+}
+
+.diet-backdrop__list {
+  display: flex;
+
+  margin-bottom: 24px;
+
+  @media (min-width: $extra-large-xl) {
+    margin-bottom: 0;
+  }
+}
+
+.diet-backdrop__item {
+  margin-right: 16px;
+}
+
+.diet-backdrop__item--margin {
+  margin-right: 0;
+}
+
+.diet-backdrop__img-list {
+}
+.diet-backdrop__content-wrap {
+}
+
+.diet-backdrop__description,
+.diet-backdrop__composition,
+.diet-backdrop__food,
+.diet-backdrop__packaging {
+  font-family: $second-font;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.diet-backdrop__description {
+  margin-bottom: 25px;
+
+  @media (min-width: $extra-large-xl) {
+    margin-bottom: 45px;
+  }
+}
+
+.diet-backdrop__composition {
+  margin-bottom: 25px;
+
+  @media (min-width: $extra-large-xl) {
+    margin-bottom: 72px;
+  }
+}
+
+.diet-backdrop__food {
+  margin-bottom: 24px;
+
+  @media (min-width: $extra-large-xl) {
+    margin-bottom: 19px;
+  }
+}
+
+.diet-backdrop__span {
+  font-weight: 700;
+}
+
+.diet-backdrop__packaging {
+  font-size: 13px;
+  line-height: 1.3;
+  margin-bottom: 31px;
+
+  @media (min-width: $extra-large-xl) {
+    margin-bottom: 37px;
+  }
+}
+
+.diet-backdrop__btn {
+  width: 100%;
+  padding: 13px 42px;
+
+  @media (min-width: $extra-large-xl) {
+    width: 160px;
+  }
+}
+
+.hidden {
+  display: none;
+}

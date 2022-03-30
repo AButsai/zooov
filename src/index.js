@@ -4,3 +4,8 @@ import './js/barf-slider.js';
 import './js/diet-slider.js';
 import './js/accardion.js';
 import './js/scroll.js';
+import './js/diet-backdrop.js';
+import './js/counter.js';
+import './js/send-form.js';
+import './js/calculate-form.js';
+import './js/card-order-btn.js';

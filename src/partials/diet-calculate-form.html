@@ -1,0 +1,64 @@
+<div class="calculate-backdrop is-hidden">
+  <form class="form calculate__form">
+    <button class="calculate__button" type="button">
+      <svg class="calculate__svg">
+        <use href="./images/svg/icons.svg#close"></use>
+      </svg>
+    </button>
+    <h2 class="calculate__title">Рассчет рациона</h2>
+    <p class="calculate__text">
+      Заполните информацию и мы свяжемся с вами, чтобы подсказать с подбором рациона для вашего
+      хвостика. Или напишите нам в мессендерах <a class="calculate__link" href="#">WhatsApp</a> и
+      <a class="calculate__link" href="#">Telegram</a>.
+    </p>
+    <label class="calculate__label-radio">
+      <input
+        class="calculate__radio visually-hidden"
+        type="radio"
+        name="ageDog"
+        value="Взрослая собака"
+        checked
+      />
+      <span class="calculate__radio-icon"></span>
+      <span class="calculate__radio-text"> Взрослая собака </span>
+    </label>
+    <label class="calculate__label-radio">
+      <input class="calculate__radio visually-hidden" type="radio" name="ageDog" value="Щенок" />
+      <span class="calculate__radio-icon"></span>
+      <span class="calculate__radio-text"> Щенок </span>
+    </label>
+    <label class="calculate__label">
+      <input class="calculate__input" type="number" name="weight" placeholder="Вес (кг)" />
+    </label>
+    <label class="calculate__label">
+      <input class="calculate__input" type="number" name="age" placeholder="Возраст" />
+    </label>
+    <label class="calculate__label">
+      <input class="calculate__input" type="text" name="name" placeholder="Ваше имя" />
+    </label>
+    <label class="calculate__label">
+      <input class="calculate__input" type="tel" name="tel" placeholder="Телефон" />
+    </label>
+    <label class="calculate__label">
+      <textarea
+        class="calculate__input calculate__textarea"
+        type="text"
+        name="message"
+        placeholder="Если у вашего хвостика есть особенности здоровья – напишите об этом..."
+        rows="4"
+      ></textarea>
+    </label>
+    <label class="calculate__checkbox-label">
+      <input class="calculate__checkbox visually-hidden" type="checkbox" name="checkbox" />
+      <span class="calculate__checkbox-icon"></span>
+      <span class="calculate__checkbox-text">Даю согласие на обработку персональных данных</span>
+    </label>
+
+    <button
+      class="hero__link-btn hero__link-btn--diet hero__link-btn--diet-calculate"
+      type="submit"
+    >
+      Расчитать
+    </button>
+  </form>
+</div>

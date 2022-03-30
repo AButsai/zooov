@@ -1,5 +1,4 @@
 import Swiper, { Pagination } from 'swiper';
-// import 'swiper/swiper-bundle.css';
 
 const dietContainer = document.querySelector('#diet-slider');
 
@@ -16,7 +15,6 @@ function mobileDietSwiper() {
       slideClass: 'diet-card',
       pagination: {
         el: '.swiper-pagination.diet-pagination',
-        // type: 'bullets',
       },
 
       breakpoints: {

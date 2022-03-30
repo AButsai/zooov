@@ -8,6 +8,10 @@ section {
   margin: 0 auto;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .container {
   max-width: 375px;
   width: 100%;

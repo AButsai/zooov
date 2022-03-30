@@ -58,6 +58,29 @@
   }
 }
 
+.hero__link-btn--diet-calculate {
+  width: 279px;
+  @media (min-width: $medium-md) {
+    width: 436px;
+  }
+}
+
+.hero__link-btn--diet-backdrop {
+  width: 100%;
+}
+
+.diet-backdrop__btn {
+}
+
+.diet-backdrop__btn-submit {
+  width: 100%;
+  @media (min-width: $extra-large-xl) {
+    width: 249px;
+    padding: 13px 53px;
+    margin-left: auto;
+  }
+}
+
 .hero__link-btn--footer {
   width: 100%;
   color: $color-text-btn;
