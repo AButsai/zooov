@@ -15,5 +15,9 @@ refs.burger.addEventListener('click', handleToggleClass);
 refs.menuClose.addEventListener('click', handleToggleClass);
 
 refs.links.forEach(link => {
-  link.addEventListener('click', handleToggleClass);
+  link.addEventListener('click', () => {
+    refs.mobileMenu.classList.remove('mobile-open');
+    refs.burger.classList.toggle('hidden-btn');
+    refs.menuClose.classList.toggle('hidden-btn');
+  });
 });
