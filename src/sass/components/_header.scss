@@ -64,31 +64,3 @@
 .header.header__fixed {
   background-color: $white;
 }
-
-.header__fixed {
-  width: 332px;
-  position: fixed;
-  top: 0;
-
-  z-index: 20;
-
-  @media (min-width: $small-sm) {
-    width: 527px;
-  }
-
-  @media (min-width: $medium-md) {
-    width: 719px;
-  }
-
-  @media (min-width: $large-lg) {
-    width: 942px;
-  }
-
-  @media (min-width: $extra-large-xl) {
-    width: 1200px;
-  }
-}
-
-.header.header__fixed .header__burger {
-  color: $black;
-}
